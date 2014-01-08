@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="jsexercises.css">
+    <script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="jsexercises.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <h1>JavaScript Exercises 0 - 4</h1>
+
+      <div id="ex0" class="exercise">
+        <h2>Exercise 0: Importing JavaScript files</h2>
+        <p>The file containing the jQuery code has already been imported for you. Add a line to import the file "jsexercises.js" too.</p>
+      </div>
+
+      <div id="ex1" class="exercise">
+        <h2>Exercise 1: Debugging JavaScript</h2>
+        <p>There is a syntax error in the JavaScript file which you'll need to fix before you can see exercises 2 and 3. Open the debugger in your browser to try and find the error. (If you don't know how to open the debugger in your browser, ask someone or consult your favorite search engine.) Fix it, refresh, and the next two exercises should appear.</p>
+      </div>
+
+      <div class="invisible">
+
+        <div id="ex2" class="exercise">
+          <h2>Exercise 2: I see <span class="struckthrough">dead people</span> glowing squares!</h2>
+          <p>There is a CSS rule targeting the "glow" class which makes the background color of an element green. Without changing the CSS at all, accomplish the following:</p>
+          <ul class="bulleted">
+            <li>Make the three tiles below glow green when your mouse hovers over them.</li>
+            <li>Make the tiles return to their original color when the mouse is no longer on top of the tile</li>
+          </ul>
+          <div class="center">
+            <div class="red block"></div>
+            <div class="orange block"></div>
+            <div class="yellow block"></div>
+          </div>
+          <p>You may find the jQuery <a href="http://api.jquery.com/category/events/">effects list</a> useful.</p>
+        </div>
+
+        <div id="ex3" class="exercise">
+          <h2>Exercise 3: Start talking to yourself</h2>
+          <p>We don't know how to make a chat room for multiple people yet, but we sure can talk to ourselves!</p>
+          <div id="chat_box">
+            <ul id="message_list">
+
+            </ul>
+            <input type="text" id="name" placeholder="Name"></input>
+            <input type="text" id="message" placeholder="Message"></input>
+            <input type="submit" id="sendChat" value="Send"></input>
+          </div>
+          <p>When the user clicks the submit button, you will need to read the text in the name and message fields, and create a new element to append to the list of messages.</p>
+          <p>You may find the jQuery <a href="http://api.jquery.com/category/manipulation/dom-insertion-inside/">DOM insertion</a> and <a href="http://api.jquery.com/category/manipulation/">DOM manipulation</a> lists useful.</p>
+          <p><strong>Bonus: </strong>Automatically scroll the chat window when it fills, rather than have the list keep growing. You may have to change the CSS files too for this one.</p>
+        </div>
+
+        <div id="ex4" class="exercise">
+          <h2>Exercise 4: Explore</h2>
+          <p>Chat with the staff about your project ideas, or just to find a fun JavaScript library to experiment with</p>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.image-container{
+    /* try setting a width and use margin: auto to center */
+    width: 800px;
+    margin: auto;
+}
+img{
+	width: 100%;
+}
+.centered-text {
+    /* there are several methods to overlay text over the image, see the css position property*/
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    left: 320px;
+    top: 210px;
+}
+.centered-text h1{
+	font-size: 40px;
+	font-weight: 100;
+}
+.centered-text p{
+	font-size: 25px;
+	font-weight: 100;
+}

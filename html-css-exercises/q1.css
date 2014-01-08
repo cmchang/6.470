@@ -1,0 +1,19 @@
+#div1, #div2, #div3, #div4{
+    display:inline-block;
+    width: 200px;
+    height: 100px;
+    margin: -2px;
+}
+
+#div1{
+	background-color: #00d4ff;
+}
+#div2{
+	background-color: #e55b80;
+}
+#div3{
+	background-color: #78d384;
+}
+#div4{
+	background-color: #f7f75d;
+}

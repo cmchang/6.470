@@ -1,0 +1,42 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    /*padding:20px;*/
+    width: 960px;
+    margin: auto;
+}
+
+/* block full of divs */
+
+#main {
+    background-color: #FCFBEB;
+    width: 800px; /* why is this not 640px? */
+    padding: 20px;
+    overflow: hidden;
+    vertical-align: top;
+    display: block;
+    margin-bottom: 20px
+}
+
+/* sidebar containing sign in*/
+#sidebar {
+    background-color: #EBDBC5;
+    width: 260px; /* related to prev: why not 320px? */;
+    padding: 30px;
+    vertical-align: top;
+    display:block;
+}
+
+/*
+    look into border-box regarding previous comments
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+
+#footer {
+    padding: 10px;
+    display:block;
+}
