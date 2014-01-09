@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<img id="preview" style="height: 500px; width: 800px;" />
+<input id="uploadImage" type="file" name="chosenPic" onchange="imageViewer();" />
+<script type="text/javascript">
+
+    function imageViewer() {
+        var reader = new FileReader();
+        reader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+        reader.onload = function (oFREvent) {
+            document.getElementById("preview").src = oFREvent.target.result;
+        };
+    };
+
+</script>
+
+</body>
+</html>
