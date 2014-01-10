@@ -20,6 +20,7 @@ nav {
     margin-bottom: 5px;
 }
 nav ul{
+	width: 100%;
 	list-style-type: none;
 	position: absolute;
 	top: -12px;
@@ -32,4 +33,21 @@ nav li{
 
 nav .logo {
     color: rgb(204, 51, 63);
+}
+
+nav .pinPhotoBtn{
+	margin-right: 105px;
+	position: absolute;
+	right: 0px;
+}
+nav .loginBtn{
+	margin-right: 40px;
+	position: absolute;
+	right: 0px;
+}
+
+nav .settingsBtn{
+	margin-right: 10px;
+	position: absolute;
+	right: 0px;
 }
