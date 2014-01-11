@@ -3,7 +3,6 @@
 <head>
     <meta charset=utf-8 />
     <title>6.470 Website Competition</title>
-
     <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="googleMap.css" />
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -12,6 +11,67 @@
     <script type="text/javascript" src="googleMap.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Brand</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+          <li class="divider"></li>
+          <li><a href="#">One more separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-form navbar-nav navbar-right">
+      <li><button type="submit" class="btn btn-default btn-primary loginBtn">Login</button></li>
+      <li class ="dropdown-toggle settingsBtn" data-toggle="dropdown"><button type="submit" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-cog"></span></button></li>
+      <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      <!-- <li class="dropdown">
+        <a href="#" class="dropdown-toggle settingsBtn" data-toggle="dropdown"><button type="button" class="btn btn-primary btn-default"><span class="glyphicon glyphicon-cog"></span></button></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li> -->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+
     <div id="mapContainer"><div id="map-canvas"/></div>
     
     <div class = "container">
@@ -81,7 +141,7 @@
                 </div><!--/span-->
 
     </div>
-    <nav>
+<!--     <nav>
         <ul>
         <li class="logo">OUR WEBSITE NAME</li>
         <li><a href="#">Home</a></li>
@@ -91,7 +151,7 @@
         <li><a class = "loginBtn" href="#"><button type="button" class="btn btn-primary btn-sm">Login</button></a></li>
         <li><a class = "settingsBtn" href="#"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-cog"></span></button></a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <!-- Bootstrap core JavaScript 
     ================================================== -->
