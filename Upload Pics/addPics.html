@@ -1,8 +1,17 @@
 <html>
 <body>
 
-<img id="preview" style="height: 500px; width: 800px;" />
-<input id="uploadImage" type="file" name="chosenPic" onchange="imageViewer();" />
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "addPics.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">	
+</head>
+<div class = "imgContainer">
+	<img class = "displayed" id="preview" style="height: 500px; width: 800px;"/>
+</div>
+<input class = "uploadButton" id="uploadImage" type="file" name="chosenPic" onchange="imageViewer();" />
+
+
 <script type="text/javascript">
 
     function imageViewer() {
@@ -11,7 +20,10 @@
 
         reader.onload = function (oFREvent) {
             document.getElementById("preview").src = oFREvent.target.result;
+
         };
+
+  
     };
 
 </script>

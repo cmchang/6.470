@@ -1,0 +1,37 @@
+.imgContainer {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.uploadButton {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+
+img.displayed {
+	display: block;
+	border: solid 2px black;
+/*    position: fixed;
+*/    left: 50%;
+    top: 50%;
+    background-color: white;
+    z-index: 100;
+
+    height: 100%;
+    width: 100%;
+
+} 
+
+/*img.displayed {
+	margin-left: auto;
+	margin-right: auto;
+} */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
