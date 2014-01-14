@@ -11,13 +11,13 @@ var path = require('path');
 var hbs = require('hbs');
 var app = express();
 
-/*
-var myDB = new Firebase('https://6470.firebaseio.com/');
-myDB.set({
-  counter: 1, 
-  numberOfServerRestarts: 1
-});
-*/
+// var Firebase = require('firebase');
+// var myDB = new Firebase('https://cmchang.firebaseio.com/');
+// myDB.set({
+//   counter: 1, 
+//   numberOfServerRestarts: 1
+// });
+
 
 
 // all environments
