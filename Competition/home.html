@@ -5,6 +5,7 @@ foodDOCTYPE html>
     <title>6.470 Website Competition</title>
     <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="googleMap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="signin.css" />
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3k4Txq8N86eGVULR76_yLRiMKKX-4jDc&sensor=false"> </script>
@@ -171,21 +172,24 @@ foodDOCTYPE html>
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Login</h4>
-
-          </div>
           <div class="modal-body">
-            <div>
-              <br>Username: <input> </br>
-              <br>Password: <input type="password"></br>
-              <br> Not a member yet? Register here.</br>
-            </div>
+            <div class="">
+
+            <form class="form-signin" role="form">
+              <h2 class="form-signin-heading">Please sign in</h2>
+              <input type="text" class="form-control" placeholder="Email address" required autofocus>
+              <input type="password" class="form-control" placeholder="Password" required>
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+
+          </div> <!-- /container -->
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Login</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
