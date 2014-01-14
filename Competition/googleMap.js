@@ -17,6 +17,7 @@ function initialize() {
 	});
 
 	google.maps.event.addListener(map, 'click', function(event) {
+		if($(".addPin").attr("id") === "pinEnabled")
 	    addMarker(event.latLng);
 	});
 }
@@ -41,3 +42,4 @@ function toggleBounce() {
 };
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
