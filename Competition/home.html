@@ -26,9 +26,10 @@ foodDOCTYPE html>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Profile</a></li>
+      <!-- <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Action</a></li>
@@ -39,7 +40,7 @@ foodDOCTYPE html>
           <li class="divider"></li>
           <li><a href="#">One more separated link</a></li>
         </ul>
-      </li>
+      </li> -->
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
@@ -48,9 +49,9 @@ foodDOCTYPE html>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
     <ul class="nav navbar-form navbar-nav navbar-right">
-      <li><button type="submit" class="btn btn-default btn-success pinPhoto">Pin a Photo</button></li>
-      <li><button type="submit" class="btn btn-default btn-primary loginBtn">Login</button></li>
-      <li class ="dropdown-toggle settingsBtn" data-toggle="dropdown"><button type="submit" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-cog"></span></button></li>
+      <li><button type="submit" class="btn btn-default btn-success pinPhoto" data-toggle="modal" data-target="#pinPhotoModal">Pin a Photo</button></li>
+      <li><button type="submit" class="btn btn-default btn-primary loginBtn" data-toggle="modal" data-target="#loginModal">Login</button></li>
+      <li class ="dropdown-toggle btn btn-default btn-primary settingsBtn" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></li>
       <ul class="dropdown-menu">
           <li><a href="#">Action</a></li>
           <li><a href="#">Another action</a></li>
@@ -165,17 +166,53 @@ foodDOCTYPE html>
                 </div><!--/span-->
 
     </div>
-<!--     <nav>
-        <ul>
-        <li class="logo">OUR WEBSITE NAME</li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">About</a></li>
-        <li><a class = "pinPhotoBtn" href="#"><button type="button" class="btn btn-success btn-sm">Pin a photo</button></a></li>
-        <li><a class = "loginBtn" href="#"><button type="button" class="btn btn-primary btn-sm">Login</button></a></li>
-        <li><a class = "settingsBtn" href="#"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-cog"></span></button></a></li>
-        </ul>
-    </nav> -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Login</h4>
+
+          </div>
+          <div class="modal-body">
+            <div>
+              <br>Username: <input> </br>
+              <br>Password: <input type="password"></br>
+              <br> Not a member yet? Register here.</br>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Pin a photo Modal -->
+    <div class="modal fade" id="pinPhotoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Title</h4>
+
+          </div>
+          <div class="modal-body">
+            <div>
+              Upload photo....
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Upload</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
 
     <!-- Bootstrap core JavaScript 
     ================================================== -->
