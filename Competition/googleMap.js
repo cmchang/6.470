@@ -29,7 +29,6 @@ function addMarker(location) {
     map: map,
     draggable: true
   });
-  markers.push(marker);
 }
 
 function toggleBounce() {
