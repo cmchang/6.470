@@ -1,7 +1,15 @@
+<html>
+
+<head>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3k4Txq8N86eGVULR76_yLRiMKKX-4jDc&sensor=false"> </script>
+</head>
+<body>
+<div id="mapContainer"><div id="map-canvas"/></div>
+
 <h1>Listing posts</h1>
  <%= link_to 'New post', new_post_path %>
 
-<table>
+<!-- <table>
   <tr>
     <th>Title</th>
     <th>Text</th>
@@ -20,8 +28,7 @@
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
-</table>
-
+</table> -->
 
 
 <div class="row">
@@ -84,3 +91,9 @@
 
 
         </div><!--/span-->
+
+
+
+<%= javascript_include_tag "googleMap" %> 
+</body>
+</html>
