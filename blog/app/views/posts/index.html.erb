@@ -1,13 +1,12 @@
 <html>
-
 <head>
+
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3k4Txq8N86eGVULR76_yLRiMKKX-4jDc&sensor=false"> </script>
 </head>
 <body>
 <div id="mapContainer"><div id="map-canvas"/></div>
 
-<h1>Listing posts</h1>
- <%= link_to 'New post', new_post_path %>
+
 
 <!-- <table>
   <tr>
@@ -29,8 +28,11 @@
     </tr>
   <% end %>
 </table> -->
-
-
+<div class = "container">
+<!-- <div class="row">
+  <h1>Listing posts</h1>
+  <%= link_to 'New post', new_post_path %>
+</div> -->
 <div class="row">
         <div class="col-6 col-sm-3 col-lg-4">
             <h3>Photos</h3>
@@ -69,30 +71,23 @@
                   <div class="newsfeed_elm">
                       <div class="col-2 col-sm-2 col-lg-2"><img src="pictures/food2.jpg" class="img-thumbnail"></div>
                       <div class="col-10 col-sm-10 col-lg-10">
-                      <div> <%= post.title %>: <%= post.text %> </div>
+                      <div> <%= link_to post.title, post %>: <%= post.text %> </div>
                       <div>
-                        <%= link_to 'Show', post %>
+<!--                         <%= link_to 'Show', post %> -->                        
                         <%= link_to 'Edit', edit_post_path(post) %>
                         <%= link_to 'Delete', post_path(post),
                                 method: :delete, data: { confirm: 'Are you sure?' } %>
                       </div>
+                      </div>
                   </div>
                 </div>
-        </div>
-<!--                 <tr>
-                  <td><%= post.title %></td>
-                  <td><%= post.text %></td>
-                  <td><%= link_to 'Show', post %></td>
-                  <td><%= link_to 'Edit', edit_post_path(post) %></td>
-                  <td><%= link_to 'Delete', post_path(post),
-                                method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                </tr> -->
               <% end %>
+        </div>
+
 
 
         </div><!--/span-->
-
-
+</div>
 
 <%= javascript_include_tag "googleMap" %> 
 </body>
